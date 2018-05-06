@@ -4,8 +4,8 @@
 
 ##### 下载&&启动
 <pre><code>cd 新文件夹
-git clone 
-cd redux-demo02-/my-app
+git clone git@github.com:TypeInfos/redux-demo02.git
+cd redux-demo02/my-app
 npm install =>安装package.json中的依赖
 npm start => 运行
 </pre></code>
