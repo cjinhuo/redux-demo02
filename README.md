@@ -114,4 +114,5 @@ function render() {
 但是有会说为什么props要一级一级传下去：
 ###### src/index.js->gun/index.js->gun/Gun.js(src、gun文件名)
 为什么不直接在Gun.js直接导入直接使用呢？这是因为react的理念：组件之间联系越紧密，其耦合性就越强，模块的独立性则越差，也就是低耦合，做到低耦合才能实现组件复用。但是props一级一级传有点浪费资源。
+
 这也导致react-redux这个库的出现，里面的Provide的实现原理用了react的[Context](https://reactjs.org/docs/context.html"react-context")，让props直接传到需要的子组件。
