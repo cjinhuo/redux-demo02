@@ -1,6 +1,6 @@
 ## redux原理-渲染篇
 
-上一篇[redux原理](https://github.com/TypeInfos/redux-demo- "console篇") ，用一个console方式讲解redux的原理，既然能在console打印出来，当然也可以在界面渲染出来。
+上一篇[redux原理](https://github.com/TypeInfos/redux-demo-01 "console篇") ，用一个console方式讲解redux的原理，既然能在console打印出来，当然也可以在界面渲染出来。
 
 ##### 下载&&启动
 <pre><code>cd 新文件夹
@@ -37,7 +37,7 @@ export function removeGUN(){
 }
 ```
 ###### action creator：顾名思义，动作创建者，用来返回action.type
-在[上一篇](https://github.com/TypeInfos/redux-demo- "console篇")，我们是用手写type来分发action：
+在[上一篇](https://github.com/TypeInfos/redux-demo-01"console篇")，我们是用手写type来分发action：
 
 ```
 store.dispatch({type:ADD_GUN});
