@@ -42,6 +42,8 @@ export function removeGUN(){
 ```
 store.dispatch({type:ADD_GUN});
 ```
+###### 这边注意下：store.dispatch({type:ADD_GUN});里面的参数对象发送到counter(state=0, action)的action，action的值就是{type:ADD_GUN}，如果store.dispatch({type:ADD_GUN,data:'this is data'});，对应的action就是{type:ADD_GUN,data:'this is data'}。
+
 当我们只有一两个action的话，这样写貌似更省时间，但是要是几十个的话，每次手写就很麻烦而且还要记住各种type的名字，用函数封装起来比较直观，而且用个函数封装起来还可以在里面处理逻辑处理，来判断是否要返回哪个action，比如：
 
 ```
